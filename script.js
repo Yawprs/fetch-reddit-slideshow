@@ -52,10 +52,10 @@ const startShow = () => {
     }, 500)
 }
 
-const stopShow = () => {
-    // currentIndex = 0
-    clearInterval(interval)
-}
+// const stopShow = () => {
+//     currentIndex = 0
+//     clearInterval(interval)
+// }
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -64,4 +64,5 @@ form.addEventListener('submit', (e) => {
 
 stop.addEventListener('click', () => {
     clearInterval(interval)
+    document.getElementById("displayImage").style.display = "none"
 })
